@@ -3,12 +3,12 @@
 ## Description
 
 This file describes the steps to have a minimal web app setting which includes babel.
-It integrates it with VSCode.
+It integrates it in VSCode.
 
 ## Initialize the project
 
-Create the files 'src/index.js' and src/test.json.
-The starting point is src/index.js.
+Create the files 'src/index.js' and 'test.json'.
+Run _npm init_; The starting point is src/index.js.
 
 ```cmd
 npm init
@@ -17,7 +17,9 @@ npm init
 ## Install npm packages
 
 ```cmd
-npm install --save-dev babel-cli babel-preset-env babel-watch
+npm install --save-dev babel-cli
+npm install --save-dev babel-preset-env
+npm install --save-dev babel-watch
 ```
 
 ## Configure 'scripts' in the file package.json
@@ -77,4 +79,5 @@ You may need to restart VSCode in this stage to take in consideration the change
 ## Configure Default Build Task
 
 Under the menu _Terminal_ click _Configure Default Build Task_ then chose _npm build_.
+
 You can now execute the compiler by pressing Ctrl+Shift+B.

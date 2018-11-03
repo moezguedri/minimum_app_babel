@@ -81,3 +81,11 @@ You may need to restart VSCode in this stage to take in consideration the change
 Under the menu _Terminal_ click _Configure Default Build Task_ then chose _npm build_.
 
 You can now execute the compiler by pressing Ctrl+Shift+B.
+
+## Steps to push changes to GitHub:
+
+Commit in VSCode GUI Then run:
+
+```cmd
+git push --all
+```

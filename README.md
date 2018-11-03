@@ -3,7 +3,8 @@
 ## Description
 
 This file describes the steps to have a minimal web app setting which includes babel.
-It integrates it in VSCode.
+
+It describes as well the setting to be integrated in VSCode; build and debug from VSCode GUI.
 
 ## Initialize the project
 

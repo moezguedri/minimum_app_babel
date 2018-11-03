@@ -1,3 +1,3 @@
-import graphql from './query.graphql';
+import test from '../test.json';
 
-console.log(graphql);
+console.log(test);

@@ -7,7 +7,7 @@ It integrates it with VSCode.
 
 ## Initialize the project
 
-Create the files 'src/index.js' and src/query.graphql.
+Create the files 'src/index.js' and src/test.json.
 The starting point is src/index.js.
 
 ```cmd
@@ -18,11 +18,7 @@ npm init
 
 ```cmd
 npm install --save-dev babel-cli babel-preset-env babel-watch
-npm install --save graphql apollo-server
-npm install --save-dev babel-plugin-graphql-tag babel-plugin-import-graphql
 ```
-
-##
 
 ## Configure 'scripts' in the file package.json
 
@@ -38,7 +34,10 @@ npm install --save-dev babel-plugin-graphql-tag babel-plugin-import-graphql
 ```
 
 Test the configuration:
+
+```cmd
 npm run build
+```
 
 ## Configure VSCode
 
@@ -73,7 +72,7 @@ Change the options _program_ and _outFiles_ as follow:
 }
 ```
 
-You may need restart VSCode in this stage to take in consideration the changes in launch.json
+You may need to restart VSCode in this stage to take in consideration the changes in launch.json
 
 ## Configure Default Build Task
 

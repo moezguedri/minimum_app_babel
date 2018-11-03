@@ -5,9 +5,10 @@
 This file describes the steps to have a minimal web app setting which includes babel.
 It integrates it with VSCode.
 
-## Initialize
+## Initialize the project
 
-The starting point is src\index.js
+Create the files 'src/index.js' and src/query.graphql.
+The starting point is src/index.js.
 
 ```cmd
 npm init
@@ -21,17 +22,17 @@ npm install --save graphql apollo-server
 npm install --save-dev babel-plugin-graphql-tag babel-plugin-import-graphql
 ```
 
-## Create the files src\index.js and src\query.graphql
+##
 
-## Configure the scripts in the file package.json
+## Configure 'scripts' in the file package.json
 
 ```json
 {
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --out-dir build --source-maps",
-    "debug": "npm run build && node build/index.js",
-    "build_and_watch": "babel src --out-dir build --source-maps --watch"
+    "dev": "npm run build && node build/index.js",
+    "watch": "babel src --out-dir build --source-maps --watch"
   }
 }
 ```
@@ -41,8 +42,8 @@ npm run build
 
 ## Configure VSCode
 
-Under the menu Debug > Add configuration... add a Node.js configuration.
-Change the options 'program' and 'outFiles' as follow:
+Under the menu 'Debug' > 'Add configuration...' add a _Node.js_ configuration.
+Change the options _program_ and _outFiles_ as follow:
 
 ```json
 {
@@ -76,5 +77,5 @@ You may need restart VSCode in this stage to take in consideration the changes i
 
 ## Configure Default Build Task
 
-Under the menu Terminal click 'Configure Default Build Task' then chose 'npm build'.
-You can now execute the TypeScript compiler by pressing Ctrl+Shift+B.
+Under the menu _Terminal_ click _Configure Default Build Task_ then chose _npm build_.
+You can now execute the compiler by pressing Ctrl+Shift+B.
